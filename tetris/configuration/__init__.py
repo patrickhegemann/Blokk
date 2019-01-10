@@ -1,0 +1,1 @@
+from tetris.configuration.GameConfiguration import GameConfiguration
