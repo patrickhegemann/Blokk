@@ -10,3 +10,7 @@ This project is currently in early development. So far it features:
 * A few different block queues
 * Keyboard and Gamepad support (no remapping possible yet)
 * A simplistic menu without any configuration options
+
+## Screenshot
+
+![Blokk Screenshot](screenshot.png "Blokk Screenshot")
