@@ -20,7 +20,9 @@ class StateBuilder:
         # state.game_mode = TwoPlayerCasual(GameConfiguration())
         state.game_mode = config.game_mode(config)
         # Player's controllers
-        state.controllers = [TetrisController(), TetrisJoystickController()]
+        state.controllers = [TetrisController()]
+        if config.players > 1:
+            state.controllers.append(TetrisJoystickController())
         # Game drawers
         state.drawers = []
         for i in range(0, len(state.game_mode.games)):

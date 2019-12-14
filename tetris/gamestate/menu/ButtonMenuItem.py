@@ -22,6 +22,7 @@ class StartSinglePlayerMenuItem(ButtonMenuItem):
     def enter(self):
         from tetris.gamemode import StandardSinglePlayer
         self.config.game_mode = StandardSinglePlayer
+        self.config.players = 1
         self._notify(MenuNotificationType.START_GAME)
 
 
@@ -29,6 +30,7 @@ class StartTwoPlayerMenuItem(ButtonMenuItem):
     def enter(self):
         from tetris.gamemode import TwoPlayerCasual
         self.config.game_mode = TwoPlayerCasual
+        self.config.players = 2
         self._notify(MenuNotificationType.START_GAME)
 
 

@@ -9,4 +9,5 @@ class GameConfiguration:
         self.queue = SevenBagQueue
         self.rotation_system = SRS
         # todo
+        self.players = 1
         self.game_mode = None
