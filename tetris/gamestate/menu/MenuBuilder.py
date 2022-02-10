@@ -12,5 +12,6 @@ class MenuBuilder:
             ButtonMenuItem(config, "Settings"),
             QuitApplicationMenuItem(config, "Quit")
         ]
+        items[1].disabled = True
         items[2].disabled = True
         return Menu(items)

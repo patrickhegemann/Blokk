@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # import cProfile as profile
 from tetris.gamestate import GameManager
 
